@@ -6,6 +6,8 @@ import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -76,7 +78,8 @@ public class MainActivity extends AppCompatActivity {
 
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+              public void onClick(View view) {
+                startAnimation();
 
                 T2.cancel();
                 TX.cancel();
@@ -202,7 +205,8 @@ public class MainActivity extends AppCompatActivity {
         });
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+              public void onClick(View view) {
+                startAnimation();
 
                 T2.cancel();
                 TX.cancel();
@@ -333,7 +337,8 @@ public class MainActivity extends AppCompatActivity {
         });
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+              public void onClick(View view) {
+                startAnimation();
              
                 T2.cancel();
                 TX.cancel();
@@ -457,7 +462,8 @@ public class MainActivity extends AppCompatActivity {
         });
         button4.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+              public void onClick(View view) {
+                startAnimation();
              
                 T2.cancel();
                 TX.cancel();
@@ -582,7 +588,8 @@ public class MainActivity extends AppCompatActivity {
         });
         button5.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+              public void onClick(View view) {
+                startAnimation();
              
                 T2.cancel();
                 TX.cancel();
@@ -709,7 +716,8 @@ public class MainActivity extends AppCompatActivity {
         button6.setOnClickListener(new View.OnClickListener() {
             @SuppressLint("SetTextI18n")
             @Override
-            public void onClick(View view) {
+              public void onClick(View view) {
+                startAnimation();
              
                 T2.cancel();
                 TX.cancel();
@@ -832,7 +840,8 @@ public class MainActivity extends AppCompatActivity {
         });
         button7.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+              public void onClick(View view) {
+                startAnimation();
              
                 T2.cancel();
                 TX.cancel();
@@ -957,7 +966,8 @@ public class MainActivity extends AppCompatActivity {
         });
         button8.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+              public void onClick(View view) {
+                startAnimation();
 
                 T2.cancel();
                 TX.cancel();
@@ -1086,7 +1096,8 @@ public class MainActivity extends AppCompatActivity {
         });
         button9.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+              public void onClick(View view) {
+                startAnimation();
 
                 T2.cancel();
                 TX.cancel();
@@ -1213,5 +1224,11 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    private void startAnimation()
+    {
+        Animation animation= AnimationUtils.loadAnimation(this, R.anim.anim);
+        textView.startAnimation(animation);
     }
 }
