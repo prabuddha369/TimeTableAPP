@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     private Spinner spinner,spinnerB;
     private Toolbar toolbar;
     private final String[] days={"Monday","Tuesday","Wednesday","Thursday","Friday"};
-    private final String[] sec={"CSE1A","CSE1B","CSE1C","CST","CSBS","AIML1A","AIML1B"};
+    private final String[] sec={"CSBS","CSE1A","CSE1B","CSE1C","CST","AIML1A","AIML1B"};
     private String s,B;
     @SuppressLint("MissingInflatedId")
     @Override
@@ -91,19 +91,23 @@ public class MainActivity extends AppCompatActivity {
                       switch (B)
                       {
                           case "CSE1A":
-                              break;
-                          case "CSE1B":
-                              break;
-                          case "CSE1C":
-                              break;
                           case "CST":
                           case "CSBS":
+                          case "AIML1A":
                               textView.setText(null);
                               T2.show();
                               break;
-                          case "AIML1A":
+                          case "CSE1B":
+                              textView.setText("Subject -Mathematics-1\n\nRoom No.-504\n\nTeacher -DR. N. SIL");
+                              break;
+                          case "CSE1C":
+                              textView.setText("Subject -Physical Training\n\nRoom No.-514\n\nTeacher -Nibedita Khatua\n");
                               break;
                           case "AIML1B":
+                              if(radioButton1.isChecked())
+                                  textView.setText("Subject -Workshop & Manufacturing Practices LAB GrpX\n\nRoom No.-124\n\nTeacher -Guest Faculty2");
+                              else
+                                  textView.setText("Subject -Physics-1 LAB Grp Y\n\nRoom No.-504\n\nTeacher -Guest Faculty3");
                               break;
                       }
                         break;
@@ -111,21 +115,20 @@ public class MainActivity extends AppCompatActivity {
                         switch (B)
                         {
                             case "CSE1A":
-                                break;
-                            case "CSE1B":
-                                break;
-                            case "CSE1C":
-                                break;
                             case "CST":
+                            case "CSE1B":
+                            case "AIML1B":
                                 textView.setText(null);
                                 T2.show();
+                                break;
+                            case "CSE1C":
+                                textView.setText("Subject -Physics-1\n\nRoom No.-514\n\nTeacher -DR. D. K. TRIPATHI\n");
                                 break;
                             case "CSBS":
                                 textView.setText("Subject -Physics for Computing Science LAB Grp X\n\nRoom No.-504\n\nTeacher -");
                                 break;
                             case "AIML1A":
-                                break;
-                            case "AIML1B":
+                                textView.setText("Subject -Physics-1\n\nRoom No.-220\n\nTeacher -DR. S. KARAN");
                                 break;
                         }
 
@@ -134,21 +137,23 @@ public class MainActivity extends AppCompatActivity {
                         switch (B)
                         {
                             case "CSE1A":
-                                break;
-                            case "CSE1B":
-                                break;
-                            case "CSE1C":
-                                break;
                             case "CST":
+                            case "CSE1C":
+                            case "AIML1B":
                                 textView.setText(null);
                                 T2.show();
+                                break;
+                            case "CSE1B":
+                                textView.setText("Subject -Mathematics-1\n\nRoom No.-519\n\nTeacher -SUBHANKAR LAGA");
                                 break;
                             case "CSBS":
                                 textView.setText("Subject -Physics for Computing Science\n\nRoom No.-220\n\nTeacher -Dr S. Karan");
                                 break;
                             case "AIML1A":
-                                break;
-                            case "AIML1B":
+                                if(radioButton1.isChecked())
+                                    textView.setText("Subject -Workshop & Manufacturing Practices LAB GrpX\n\nRoom No.-124\n\nTeacher -DR. S . CHABRI");
+                                else
+                                    textView.setText("Subject -Physics-1 LAB Grp Y\n\nRoom No.-504\n\nTeacher -DR. D. K. TRIPATHI");
                                 break;
                         }
                         break;
@@ -156,12 +161,19 @@ public class MainActivity extends AppCompatActivity {
                         switch (B)
                         {
                             case "CSE1A":
+                                if(radioButton2.isChecked())
+                                    textView.setText("Subject -Physics-1 LAB Grp Y\n\nRoom No.-504\nTeacher -DR. I SARKAR");
+                                else
+                                    textView.setText("Subject -Workshop & Manufacturing Practices LAB GrpX\n\nRoom No.-124\n\nTeacher -MR. A. SARKAR");
                                 break;
                             case "CSE1B":
+                                textView.setText("Subject -Physics-1\n\nRoom No.-504\n\nTeacher -DR. D. K. TRIPATHI\n");
                                 break;
                             case "CSE1C":
+                                textView.setText("Subject -Mathematics-1\n\nRoom No.-514\n\nTeacher -SANKAR PARAI\n");
                                 break;
                             case "CST":
+                            case "AIML1B":
                                 textView.setText(null);
                                 T2.show();
                                 break;
@@ -173,8 +185,7 @@ public class MainActivity extends AppCompatActivity {
                                     textView.setText("Subject -Fundamental of Computer Science LAB Grp Y\n\nRoom No.-316L\n\nTeacher -Jayanta Pal");
                                 break;
                             case "AIML1A":
-                                break;
-                            case "AIML1B":
+                                textView.setText("Subject -Professional Communication\n\nRoom No.-220\n\nTeacher -Guest Faculty5");
                                 break;
                         }
                         break;
@@ -182,21 +193,25 @@ public class MainActivity extends AppCompatActivity {
                         switch (B)
                         {
                             case "CSE1A":
-                                break;
-                            case "CSE1B":
-                                break;
-                            case "CSE1C":
-                                break;
                             case "CST":
+                            case "CSE1B":
                                 textView.setText(null);
                                 T2.show();
+                                break;
+                            case "CSE1C":
+                                textView.setText("Subject -Mathematics-1\n\nRoom No.-514\n\nTeacher -D.DEY");
                                 break;
                             case "CSBS":
                                 textView.setText("Subject -Principle of Electrical Engineering\n\nRoom No.-519\n\nTeacher -Pallav Dutta");
                                 break;
                             case "AIML1A":
+                                if(radioButton2.isChecked())
+                                    textView.setText("Subject -Workshop & Manufacturing Practices LAB GrpY\n\nRoom No.-124\n\nTeacher -DR. S . CHABRI");
+                                else
+                                    textView.setText("Subject -Physics-1 LAB Grp X\n\nRoom No.-504\n\nTeacher -Nibedita Khatua");
                                 break;
                             case "AIML1B":
+                                textView.setText("Subject -English Training\n\nRoom No.-220\n\nTeacher -Guest Faculty5");
                                 break;
                         }
                         break;
@@ -217,22 +232,25 @@ public class MainActivity extends AppCompatActivity {
                         switch (B)
                         {
                             case "CSE1A":
-                                break;
-                            case "CSE1B":
-                                break;
-                            case "CSE1C":
-                                break;
+                            case "CSBS":
                             case "CST":
                                 textView.setText(null);
                                 T2.show();
                                 break;
-                            case "CSBS":
-                                textView.setText(null);
-                                T2.show();
+                            case "CSE1B":
+                                textView.setText("Subject -Professional Communication\n\nRoom No.-504\n\nTeacher -MS. A PAL\n");
+                                break;
+                            case "CSE1C":
+                                textView.setText("Subject -Physical Training\n\nRoom No.-514\n\nTeacher -Nibedita Khatua\n");
                                 break;
                             case "AIML1A":
+                                textView.setText("Subject -Physics-1\n\nRoom No.-401\n\nTeacher -DR. I SARKAR\n");
                                 break;
                             case "AIML1B":
+                                if(radioButton1.isChecked())
+                                    textView.setText("Subject -Workshop & Manufacturing Practices LAB GrpX\n\nRoom No.-124\n\nTeacher -Guest Faculty2");
+                                else
+                                    textView.setText("Subject -Physics-1 LAB Grp Y\n\nRoom No.-504\n\nTeacher -Guest Faculty3");
                                 break;
                         }
                         break;
@@ -240,14 +258,16 @@ public class MainActivity extends AppCompatActivity {
                         switch (B)
                         {
                             case "CSE1A":
-                                break;
-                            case "CSE1B":
-                                break;
-                            case "CSE1C":
-                                break;
                             case "CST":
+                            case "AIML1B":
                                 textView.setText(null);
                                 T2.show();
+                                break;
+                            case "CSE1B":
+                                textView.setText("Subject -Mathematics-1\n\nRoom No.-504\n\nTeacher -SUBHANKAR LAGA");
+                                break;
+                            case "CSE1C":
+                                textView.setText("Subject -Mathematics-1\n\nRoom No.-514\n\nTeacher -SANKAR PARAI");
                                 break;
                             case "CSBS":
                                 if ( radioButton1.isChecked())
@@ -257,8 +277,7 @@ public class MainActivity extends AppCompatActivity {
                                     TX.show();}
                                 break;
                             case "AIML1A":
-                                break;
-                            case "AIML1B":
+                                textView.setText("Subject -Mathematics-1\n\nRoom No.-220\n\nTeacher -MR. A. GUPTA");
                                 break;
                         }
                         break;
@@ -266,21 +285,25 @@ public class MainActivity extends AppCompatActivity {
                         switch (B)
                         {
                             case "CSE1A":
-                                break;
-                            case "CSE1B":
-                                break;
-                            case "CSE1C":
-                                break;
                             case "CST":
+                            case "AIML1B":
                                 textView.setText(null);
                                 T2.show();
+                                break;
+                            case "CSE1B":
+                                textView.setText("Subject -Physics-1\n\nRoom No.-519\n\nTeacher -DR. S. KARAN");
+                                break;
+                            case "CSE1C":
+                                textView.setText("Subject -Physics-1\n\nRoom No.-514\n\nTeacher -DR. T. MUKHERJEE\n");
                                 break;
                             case "CSBS":
                                 textView.setText("Subject -Business Communication and Value Science\n\nRoom No.-220\n\nTeacher -Mrs. S. Basu");
                                 break;
                             case "AIML1A":
-                                break;
-                            case "AIML1B":
+                                if(radioButton1.isChecked())
+                                    textView.setText("Subject -Workshop & Manufacturing Practices LAB GrpX\n\nRoom No.-124\n\nTeacher -DR. S . CHABRI");
+                                else
+                                    textView.setText("Subject -Physics-1 LAB Grp Y\n\nRoom No.-504\n\nTeacher -DR. D. K. TRIPATHI");
                                 break;
                         }
                         break;
@@ -288,12 +311,19 @@ public class MainActivity extends AppCompatActivity {
                         switch (B)
                         {
                             case "CSE1A":
+                                if(radioButton2.isChecked())
+                                    textView.setText("Subject -Physics-1 LAB Grp Y\n\nRoom No.-504\nTeacher -DR. I SARKAR");
+                                else
+                                    textView.setText("Subject -Workshop & Manufacturing Practices LAB GrpX\n\nRoom No.-124\n\nTeacher -MR. A. SARKAR");
                                 break;
                             case "CSE1B":
+                                textView.setText("Subject -Physics Training\n\nRoom No.-504\n\nTeacher -Guest Faculty3");
                                 break;
                             case "CSE1C":
+                                textView.setText("Subject -Professional Communication\n\nRoom No.-514\n\nTeacher -MRS. S. BASU");
                                 break;
                             case "CST":
+                            case "AIML1B":
                                 textView.setText(null);
                                 T2.show();
                                 break;
@@ -305,8 +335,7 @@ public class MainActivity extends AppCompatActivity {
                                     TY.show();}
                                 break;
                             case "AIML1A":
-                                break;
-                            case "AIML1B":
+                                textView.setText("Subject -Physics-1\n\nRoom No.-220\n\nTeacher -DR. T. MUKHERJEE");
                                 break;
                         }
                         break;
@@ -314,21 +343,27 @@ public class MainActivity extends AppCompatActivity {
                         switch (B)
                         {
                             case "CSE1A":
-                                break;
-                            case "CSE1B":
-                                break;
-                            case "CSE1C":
-                                break;
                             case "CST":
                                 textView.setText(null);
                                 T2.show();
+                                break;
+                            case "CSE1B":
+                                textView.setText("Subject -Physics-1\n\nRoom No.-504\n\nTeacher -DR. I SARKAR");
+                                break;
+                            case "CSE1C":
+                                textView.setText("Subject -Professional Communication\n\nRoom No.-514\n\nTeacher -MS. A.PAL\n");
                                 break;
                             case "CSBS":
                                 textView.setText("Subject -Business Communication and Value Science\n\nRoom No.-519\n\nTeacher -Guest Faculty");
                                 break;
                             case "AIML1A":
+                                if(radioButton2.isChecked())
+                                    textView.setText("Subject -Workshop & Manufacturing Practices LAB GrpY\n\nRoom No.-124\n\nTeacher -DR. S . CHABRI");
+                                else
+                                    textView.setText("Subject -Physics-1 LAB Grp X\n\nRoom No.-504\n\nTeacher -Nibedita Khatua");
                                 break;
                             case "AIML1B":
+                                textView.setText("Subject -English Training\n\nRoom No.-220\n\nTeacher -Guest Faculty5");
                                 break;
                         }
                         break;
@@ -349,21 +384,27 @@ public class MainActivity extends AppCompatActivity {
                         switch (B)
                         {
                             case "CSE1A":
-                                break;
-                            case "CSE1B":
-                                break;
-                            case "CSE1C":
-                                break;
                             case "CST":
                                 textView.setText(null);
                                 T2.show();
+                                break;
+                            case "CSE1B":
+                                textView.setText("Break!");
+                                break;
+                            case "CSE1C":
+                                textView.setText("Subject -Physics-1\n\nRoom No.-514\n\nTeacher -DR. S. KARAN");
                                 break;
                             case "CSBS":
                                 textView.setText("Subject -Discrete Maths\n\nRoom No.-407\n\nTeacher -Debanshu Bose");
                                 break;
                             case "AIML1A":
+                                textView.setText("Subject -Professional Communication\n\nRoom No.-402\n\nTeacher -DEBASMITA SEN");
                                 break;
                             case "AIML1B":
+                                if(radioButton1.isChecked())
+                                    textView.setText("Subject -Workshop & Manufacturing Practices LAB GrpX\n\nRoom No.-124\n\nTeacher -Guest Faculty2");
+                                else
+                                    textView.setText("Subject -Physics-1 LAB Grp Y\n\nRoom No.-504\n\nTeacher -Guest Faculty3");
                                 break;
                         }
                         break;
@@ -371,10 +412,13 @@ public class MainActivity extends AppCompatActivity {
                         switch (B)
                         {
                             case "CSE1A":
+                                textView.setText("Subject -Professional Communication\n\nRoom No.-504\n\nTeacher -Guest Faculty6");
                                 break;
                             case "CSE1B":
+                                textView.setText("Subject -English Training\n\nRoom No.-408 & 419\n\nTeacher -Wooshasi Mukhopadhyay");
                                 break;
                             case "CSE1C":
+                                textView.setText("Subject -Theme based Project I\n\nRoom No.-\n\nTeacher -");
                                 break;
                             case "CST":
                                 textView.setText("Subject -Mathematics-1\n\nRoom No.-514\n\nTeacher -DEBANSHU BOSE");
@@ -383,8 +427,9 @@ public class MainActivity extends AppCompatActivity {
                                 textView.setText("Subject -Physics for Computing Science\n\nRoom No.-406\n\nTeacher -");
                                 break;
                             case "AIML1A":
-                                break;
                             case "AIML1B":
+                                textView.setText(null);
+                                T2.show();
                                 break;
                         }
                         break;
@@ -392,10 +437,11 @@ public class MainActivity extends AppCompatActivity {
                         switch (B)
                         {
                             case "CSE1A":
+                                textView.setText("Subject -Mathematics-1\n\nRoom No.-514\n\nTeacher -DR. Shilpa PAL");
                                 break;
                             case "CSE1B":
-                                break;
                             case "CSE1C":
+                                textView.setText("Break!");
                                 break;
                             case "CST":
                                 textView.setText(null);
@@ -405,8 +451,13 @@ public class MainActivity extends AppCompatActivity {
                                 textView.setText("Subject -Fundamentals of Computer Science\n\nRoom No.-220\n\nTeacher -Jayanta Pal");
                                 break;
                             case "AIML1A":
+                                if(radioButton1.isChecked())
+                                    textView.setText("Subject -Workshop & Manufacturing Practices LAB GrpX\n\nRoom No.-124\n\nTeacher -DR. S . CHABRI");
+                                else
+                                    textView.setText("Subject -Physics-1 LAB Grp Y\n\nRoom No.-504\n\nTeacher -DR. D. K. TRIPATHI");
                                 break;
                             case "AIML1B":
+                                textView.setText("Subject -Physical Training\n\nRoom No.-501\n\nTeacher -Guest Faculty3");
                                 break;
                         }
                         break;
@@ -414,12 +465,19 @@ public class MainActivity extends AppCompatActivity {
                         switch (B)
                         {
                             case "CSE1A":
+                                if(radioButton2.isChecked())
+                                    textView.setText("Subject -Physics-1 LAB Grp Y\n\nRoom No.-504\nTeacher -DR. I SARKAR");
+                                else
+                                    textView.setText("Subject -Workshop & Manufacturing Practices LAB GrpX\n\nRoom No.-124\n\nTeacher -MR. A. SARKAR");
                                 break;
                             case "CSE1B":
+                                textView.setText("Subject -Physics Training\n\nRoom No.-504\n\nTeacher -Guest Faculty3");
                                 break;
                             case "CSE1C":
+                                textView.setText("Subject -Skill Development I: Soft Skill\n\nRoom No.-\n\nTeacher -");
                                 break;
                             case "CST":
+                            case "AIML1B":
                                 textView.setText(null);
                                 T2.show();
                                 break;
@@ -431,8 +489,7 @@ public class MainActivity extends AppCompatActivity {
                                     TY.show();}
                                 break;
                             case "AIML1A":
-                                break;
-                            case "AIML1B":
+                                textView.setText("Subject -Mathametics-1\n\nRoom No.-407\n\nTeacher -MR. A. GUPTA\n");
                                 break;
                         }
                         break;
@@ -440,10 +497,13 @@ public class MainActivity extends AppCompatActivity {
                         switch (B)
                         {
                             case "CSE1A":
+                                textView.setText("Subject -Mathematics-1\n\nRoom No.-504\n\nTeacher -DR. Shilpa PAL");
                                 break;
                             case "CSE1B":
+                                textView.setText("Subject -Professional Communication\t\n\n\nRoom No.-514\n\nTeacher -MRS. R RAY\n");
                                 break;
                             case "CSE1C":
+                                textView.setText("Break!");
                                 break;
                             case "CST":
                                 textView.setText("Subject -Skill Development 1:Soft Skill\n\nRoom No.-\n\nTeacher -");
@@ -452,8 +512,13 @@ public class MainActivity extends AppCompatActivity {
                                 textView.setText("Subject -Principles of Electrical Engineering\n\nRoom No.-407\n\nTeacher -Pallav Dutta");
                                 break;
                             case "AIML1A":
+                                if(radioButton2.isChecked())
+                                    textView.setText("Subject -Workshop & Manufacturing Practices LAB GrpY\n\nRoom No.-124\n\nTeacher -DR. S . CHABRI");
+                                else
+                                    textView.setText("Subject -Physics-1 LAB Grp X\n\nRoom No.-504\n\nTeacher -Nibedita Khatua");
                                 break;
                             case "AIML1B":
+                                textView.setText("Subject -Mathametics-1\n\nRoom No.-507\n\nTeacher -SURAJIT BANERJEE");
                                 break;
                         }
                         break;
@@ -474,10 +539,18 @@ public class MainActivity extends AppCompatActivity {
                         switch (B)
                         {
                             case "CSE1A":
+                                textView.setText(null);
+                                T2.show();
                                 break;
                             case "CSE1B":
+                                if(radioButton1.isChecked())
+                                textView.setText("Subject -Physics-1 LAB Grp X\n\nRoom No.-220\n\nTeacher -Sayantan Bakshi");
+                                else{
+                                    textView.setText(null);
+                                    TX.show();}
                                 break;
                             case "CSE1C":
+                                textView.setText("Break!");
                                 break;
                             case "CST":
                                 textView.setText("Subject -Physics-1\n\nRoom No.-420\n\nTeacher -Nibedita Khatua");
@@ -486,8 +559,10 @@ public class MainActivity extends AppCompatActivity {
                                 textView.setText("Subject -Fundamentals of Computing Science\n\nRoom No.-407\n\nTeacher -Jayanta Pal");
                                 break;
                             case "AIML1A":
+                                textView.setText("Subject -Mathematics-1\n\nRoom No.-402\n\nTeacher -Guest Faculty5");
                                 break;
                             case "AIML1B":
+                                textView.setText("Subject -Physics-1\n\nRoom No.-504\n\nTeacher -Guest Faculty3");
                                 break;
                         }
                         break;
@@ -495,23 +570,27 @@ public class MainActivity extends AppCompatActivity {
                         switch (B)
                         {
                             case "CSE1A":
+                                textView.setText("Subject -Physics-1\n\nRoom No.-504\n\nTeacher -DR. S. KARAN");
                                 break;
                             case "CSE1B":
+                                textView.setText("Subject -English Training\n\nRoom No.-408 & 419\n\nTeacher -Wooshasi Mukhopadhyay");
                                 break;
                             case "CSE1C":
+                            case "AIML1A":
+                                textView.setText(null);
+                                T2.show();
                                 break;
                             case "CST":
                                 if(radioButton1.isChecked())
-                                    textView.setText("Subject -Workshop & Manufacturing Practices LAB GrpX\n\nRoom No.-\n\nTeacher -MR. A. GUPTA");
+                                    textView.setText("Subject -Workshop & Manufacturing Practices LAB GrpX\n\nRoom No.-124\n\nTeacher -MR. A. GUPTA");
                                 else
-                                    textView.setText("Subject -Workshop & Manufacturing Practices LAB GrpY\n\nRoom No.-\n\nTeacher -DR. S.CHABRI");
+                                    textView.setText("Subject -Physics-1 LAB Grp Y\n\nRoom No.-504\n\nTeacher -DR. INDRANI SARKAR");
                                 break;
                             case "CSBS":
                                 textView.setText("Subject -Satistics Probability and Calculus\n\nRoom No.-215\n\nTeacher -");
                                 break;
-                            case "AIML1A":
-                                break;
                             case "AIML1B":
+                                textView.setText("Subject -Professional Communication\n\nRoom No.-519\n\nTeacher -MRS. R RAY");
                                 break;
                         }
                         break;
@@ -519,10 +598,16 @@ public class MainActivity extends AppCompatActivity {
                         switch (B)
                         {
                             case "CSE1A":
+                                textView.setText("Subject -Physics-1\n\nRoom No.-504\n\nTeacher -DR. I SARKAR");
                                 break;
                             case "CSE1B":
+                                if(radioButton1.isChecked())
+                                    textView.setText("Subject -Workshop & Manufacturing Practices LAB GrpX\n\nRoom No.-124\n\nTeacher -MR. A. Sarkar");
+                                else
+                                    textView.setText("Subject -Physics-1 LAB Grp Y\n\nRoom No.-504\n\nTeacher -Sayantan Bakshi");
                                 break;
                             case "CSE1C":
+                                textView.setText("Subject -Training English\n\nRoom No.-514\n\nTeacher -Wooshasi Mukhopadhyay");
                                 break;
                             case "CST":
                                 textView.setText(null);
@@ -532,8 +617,10 @@ public class MainActivity extends AppCompatActivity {
                                 textView.setText("Subject -Discrete Maths\n\nRoom No.-220\n\nTeacher -Dr. Shilpa Pal");
                                 break;
                             case "AIML1A":
+                                textView.setText("Break!");
                                 break;
                             case "AIML1B":
+                                textView.setText("Subject -Physical Training\n\nRoom No.-501\n\nTeacher -Guest Faculty3");
                                 break;
                         }
                         break;
@@ -541,10 +628,19 @@ public class MainActivity extends AppCompatActivity {
                         switch (B)
                         {
                             case "CSE1A":
+                                textView.setText("Subject -Mathematics-1\n\nRoom No.-502\n\nTeacher -DEBANSHU BOSE");
                                 break;
                             case "CSE1B":
+                                if (radioButton2.isChecked())
+                                textView.setText("Subject -Workshop & Manufacturing Practices LAB GrpY\n\nRoom No.-124\n\nTeacher -MR. A. SAMANTA");
+                                else{
+                                    textView.setText(null);
+                                    TY.show();}
                                 break;
                             case "CSE1C":
+                            case "AIML1B":
+                                textView.setText(null);
+                                T2.show();
                                 break;
                             case "CST":
                                 textView.setText("Subject -Physics-1\n\nRoom No.-514\n\nTeacher -DR. INDRANI SARKAR");
@@ -553,8 +649,7 @@ public class MainActivity extends AppCompatActivity {
                                 textView.setText("Subject -Principle of Electrical Engineering LAB Grp X\n\nRoom No.-204\n\nTeacher -Susovan Goswami");
                                 break;
                             case "AIML1A":
-                                break;
-                            case "AIML1B":
+                                textView.setText("Break!");
                                 break;
                         }
                         break;
@@ -562,10 +657,16 @@ public class MainActivity extends AppCompatActivity {
                         switch (B)
                         {
                             case "CSE1A":
+                                textView.setText("Subject -Physics-1\n\nRoom No.-504\n\nTeacher -DR. D. K. TRIPATHI");
                                 break;
                             case "CSE1B":
+                                textView.setText("Subject -Mathematics-1\n\nRoom No.-514\n\nTeacher -DR. N. SIL");
                                 break;
                             case "CSE1C":
+                                if(radioButton2.isChecked())
+                                    textView.setText("Subject -Workshop & Manufacturing Practices LAB GrpY\n\nRoom No.-124\n\nTeacher -Guest Faculty2");
+                                else
+                                    textView.setText("Subject -Physics-1 LAB Grp X\n\nRoom No.-504\n\nTeacher -DR. I SARKAR");
                                 break;
                             case "CST":
                                 textView.setText("Subject -ENG Training\n\nRoom No.-516 & 514\n\nTeacher -Guest Faculty5");
@@ -578,8 +679,11 @@ public class MainActivity extends AppCompatActivity {
                                     TY.show();}
                                 break;
                             case "AIML1A":
+                                textView.setText("Subject -Mathametics-1\n\nRoom No.-422\n\nTeacher -Guest Faculty5");
                                 break;
                             case "AIML1B":
+                                textView.setText(null);
+                                T2.show();
                                 break;
                         }
                         break;
@@ -600,10 +704,19 @@ public class MainActivity extends AppCompatActivity {
                         switch (B)
                         {
                             case "CSE1A":
+                            case "AIML1A":
+                                textView.setText(null);
+                                T2.show();
                                 break;
                             case "CSE1B":
+                                if(radioButton1.isChecked())
+                                    textView.setText("Subject -Physics-1 LAB Grp X\n\nRoom No.-220\n\nTeacher -Sayantan Bakshi");
+                                else{
+                                    textView.setText(null);
+                                TX.show();}
                                 break;
                             case "CSE1C":
+                                textView.setText("Subject -Mathematics\n\nRoom No.-514\n\nTeacher -D.DEY");
                                 break;
                             case "CST":
                                 textView.setText("Subject -Mathematics-1\n\nRoom No.-419\n\nTeacher -DEBANSHU BOSE");
@@ -611,9 +724,8 @@ public class MainActivity extends AppCompatActivity {
                             case "CSBS":
                                 textView.setText("Subject -Fundamentals of Computing Science\n\nRoom No.-407\n\nTeacher -Jayanta Pal");
                                 break;
-                            case "AIML1A":
-                                break;
                             case "AIML1B":
+                                textView.setText("Subject -Mathametics-1\n\nRoom No.-504\n\nTeacher -DR. N. SIL");
                                 break;
                         }
                         break;
@@ -621,24 +733,23 @@ public class MainActivity extends AppCompatActivity {
                         switch (B)
                         {
                             case "CSE1A":
+                                textView.setText("Break!");
                                 break;
                             case "CSE1B":
-                                break;
-                            case "CSE1C":
-                                break;
-                            case "CST":
-                                if(radioButton1.isChecked())
-                                    textView.setText("Subject -Workshop & Manufacturing Practices LAB GrpX\n\nRoom No.-\n\nTeacher -MR. A. GUPTA");
-                                else
-                                    textView.setText("Subject -Workshop & Manufacturing Practices LAB GrpY\n\nRoom No.-\n\nTeacher -DR. S.CHABRI");
-                                break;
                             case "CSBS":
+                            case "CSE1C":
+                            case "AIML1A":
                                 textView.setText(null);
                                 T2.show();
                                 break;
-                            case "AIML1A":
+                            case "CST":
+                                if(radioButton1.isChecked())
+                                    textView.setText("Subject -Workshop & Manufacturing Practices LAB GrpX\n\nRoom No.-124\n\nTeacher -MR. A. GUPTA");
+                                else
+                                    textView.setText("Subject -Physics-1 LAB Grp Y\n\nRoom No.-504\n\nTeacher -DR. INDRANI SARKAR");
                                 break;
                             case "AIML1B":
+                                textView.setText("Subject -Physics-1\n\nRoom No.-519\n\nTeacher -DR. T. MUKHERJEE");
                                 break;
                         }
                         break;
@@ -646,10 +757,16 @@ public class MainActivity extends AppCompatActivity {
                         switch (B)
                         {
                             case "CSE1A":
+                                textView.setText("Subject -Skill Development I: Soft Skill\n\nRoom No.-504\n\nTeacher -");
                                 break;
                             case "CSE1B":
+                                if(radioButton1.isChecked())
+                                    textView.setText("Subject -Workshop & Manufacturing Practices LAB GrpX\n\nRoom No.-124\n\nTeacher -MR. A. Sarkar");
+                                else
+                                    textView.setText("Subject -Physics-1 LAB Grp Y\n\nRoom No.-504\n\nTeacher -Sayantan Bakshi");
                                 break;
                             case "CSE1C":
+                                textView.setText("Subject -Training English\n\nRoom No.-514\n\nTeacher -Wooshasi Mukhopadhyay");
                                 break;
                             case "CST":
                                 textView.setText(null);
@@ -659,8 +776,10 @@ public class MainActivity extends AppCompatActivity {
                                 textView.setText("Subject -Satistics Probability and Calculus\n\nRoom No.-220\n\nTeacher -MS. P. Mondal");
                                 break;
                             case "AIML1A":
+                                textView.setText("Subject -English Training\n\nRoom No.-501\n\nTeacher -Guest Faculty6");
                                 break;
                             case "AIML1B":
+                                textView.setText("Break!");
                                 break;
                         }
                         break;
@@ -668,10 +787,16 @@ public class MainActivity extends AppCompatActivity {
                         switch (B)
                         {
                             case "CSE1A":
+                            case "CSE1C":
+                                textView.setText(null);
+                                T2.show();
                                 break;
                             case "CSE1B":
-                                break;
-                            case "CSE1C":
+                                if (radioButton2.isChecked())
+                                    textView.setText("Subject -Workshop & Manufacturing Practices LAB GrpY\n\nRoom No.-124\n\nTeacher -MR. A. SAMANTA");
+                                else{
+                                    textView.setText(null);
+                                    TY.show();}
                                 break;
                             case "CST":
                                 textView.setText("Subject -Professional Communication\n\nRoom No.-514\n\nTeacher -MRS. R RAY");
@@ -680,8 +805,10 @@ public class MainActivity extends AppCompatActivity {
                                 textView.setText("Subject -Principle of Electrical Engineering LAB Grp X\n\nRoom No.-204\n\nTeacher -Susovan Goswami");
                                 break;
                             case "AIML1A":
+                                textView.setText("Subject -Physical Training\n\nRoom No.-220\n\nTeacher -Sayantan Bakshi");
                                 break;
                             case "AIML1B":
+                                textView.setText("Subject -Professional Communication\n\nRoom No.-504\n\nTeacher -MRS. S. BASU");
                                 break;
                         }
                         break;
@@ -689,10 +816,19 @@ public class MainActivity extends AppCompatActivity {
                         switch (B)
                         {
                             case "CSE1A":
+                                textView.setText("Break!");
                                 break;
                             case "CSE1B":
+                            case "AIML1A":
+                            case "AIML1B":
+                                textView.setText(null);
+                                T2.show();
                                 break;
                             case "CSE1C":
+                                if(radioButton2.isChecked())
+                                    textView.setText("Subject -Workshop & Manufacturing Practices LAB GrpY\n\nRoom No.-124\n\nTeacher -Guest Faculty2");
+                                else
+                                    textView.setText("Subject -Physics-1 LAB Grp X\n\nRoom No.-504\n\nTeacher -DR. I SARKAR");
                                 break;
                             case "CST":
                                 textView.setText("Subject -ENG Training\n\nRoom No.-516 & 514\n\nTeacher -Guest Faculty5");
@@ -703,10 +839,6 @@ public class MainActivity extends AppCompatActivity {
                                     TY.show();}
                                 else
                                     textView.setText("Subject -Principles of Electrical Engineering LAB Grp Y\n\nRoom No.-\n\nTeacher -Biswadeep Gupta Bakshi");
-                                break;
-                            case "AIML1A":
-                                break;
-                            case "AIML1B":
                                 break;
                         }
                         break;
@@ -728,10 +860,20 @@ public class MainActivity extends AppCompatActivity {
                         switch (B)
                         {
                             case "CSE1A":
+                                textView.setText("Subject -Professional Communication\n\nRoom No.-504\n\nTeacher -MRS. R RAY");
                                 break;
                             case "CSE1B":
+                                if(radioButton1.isChecked())
+                                textView.setText("Subject -Physics-1 LAB Grp X\n\nRoom No.-220\n\nTeacher -Sayantan Bakshi");
+                            else{
+                                textView.setText(null);
+                                TX.show();}
                                 break;
                             case "CSE1C":
+                            case "AIML1A":
+                            case "AIML1B":
+                                textView.setText(null);
+                                T2.show();
                                 break;
                             case "CST":
                                 textView.setText("Subject -Theme based Project-1\n\nRoom No.-\n\nTeacher -");
@@ -739,34 +881,29 @@ public class MainActivity extends AppCompatActivity {
                             case "CSBS":
                                 textView.setText("Subject -Statistics Probability and Calculus\n\nRoom No.-407\n\nTeacher -MS. P. Mondal");
                                 break;
-                            case "AIML1A":
-                                break;
-                            case "AIML1B":
-                                break;
                         }
                         break;
                     case "Tuesday":
                         switch (B)
                         {
                             case "CSE1A":
+                                textView.setText("Subject -Mathematics-1\n\nRoom No.-504\n\nTeacher -DEBANSHU BOSE");
                                 break;
                             case "CSE1B":
-                                break;
-                            case "CSE1C":
-                                break;
-                            case "CST":
-                                if(radioButton1.isChecked())
-                                    textView.setText("Subject -Workshop & Manufacturing Practices LAB GrpX\n\nRoom No.-\n\nTeacher -MR. A. GUPTA");
-                                else
-                                    textView.setText("Subject -Workshop & Manufacturing Practices LAB GrpY\n\nRoom No.-\n\nTeacher -DR. S.CHABRI");
-                                break;
                             case "CSBS":
+                            case "CSE1C":
+                            case "AIML1A":
                                 textView.setText(null);
                                 T2.show();
                                 break;
-                            case "AIML1A":
+                            case "CST":
+                                if(radioButton1.isChecked())
+                                    textView.setText("Subject -Workshop & Manufacturing Practices LAB GrpX\n\nRoom No.-124\n\nTeacher -MR. A. GUPTA");
+                                else
+                                    textView.setText("Subject -Physics-1 LAB Grp Y\n\nRoom No.-504\n\nTeacher -DR. INDRANI SARKAR");
                                 break;
                             case "AIML1B":
+                                textView.setText("Subject -Mathametics-1\n\nRoom No.-519\n\nTeacher -DR. N. SIL");
                                 break;
                         }
                         break;
@@ -774,10 +911,15 @@ public class MainActivity extends AppCompatActivity {
                         switch (B)
                         {
                             case "CSE1A":
+                            case "CSE1C":
+                                textView.setText(null);
+                                T2.show();
                                 break;
                             case "CSE1B":
-                                break;
-                            case "CSE1C":
+                                if(radioButton1.isChecked())
+                                    textView.setText("Subject -Workshop & Manufacturing Practices LAB GrpX\n\nRoom No.-124\n\nTeacher -MR. A. Sarkar");
+                                else
+                                    textView.setText("Subject -Physics-1 LAB Grp Y\n\nRoom No.-504\n\nTeacher -Sayantan Bakshi");
                                 break;
                             case "CST":
                                 textView.setText("Subject -Professional Communication\n\nRoom No.-419\n\nTeacher -MRS. S. BASU");
@@ -786,8 +928,10 @@ public class MainActivity extends AppCompatActivity {
                                 textView.setText("Break!");
                                 break;
                             case "AIML1A":
+                                textView.setText("Subject -English Training\n\nRoom No.-501\n\nTeacher -Guest Faculty6");
                                 break;
                             case "AIML1B":
+                                textView.setText("Subject -Physics-1\n\nRoom No.-514\n\nTeacher -DR. D. K. TRIPATHI");
                                 break;
                         }
                         break;
@@ -795,22 +939,24 @@ public class MainActivity extends AppCompatActivity {
                         switch (B)
                         {
                             case "CSE1A":
+                            case "CSBS":
+                            case "CST":
+                            case "CSE1C":
+                                textView.setText(null);
+                                T2.show();
                                 break;
                             case "CSE1B":
-                                break;
-                            case "CSE1C":
-                                break;
-                            case "CST":
-                                textView.setText(null);
-                                T2.show();
-                                break;
-                            case "CSBS":
-                                textView.setText(null);
-                                T2.show();
+                                if (radioButton2.isChecked())
+                                    textView.setText("Subject -Workshop & Manufacturing Practices LAB GrpY\n\nRoom No.-124\n\nTeacher -MR. A. SAMANTA");
+                                else{
+                                    textView.setText(null);
+                                    TY.show();}
                                 break;
                             case "AIML1A":
+                                textView.setText("Subject -Physical Training\n\nRoom No.-220\n\nTeacher -Sayantan Bakshi");
                                 break;
                             case "AIML1B":
+                                textView.setText("Subject -Mathametics-1\n\nRoom No.-504\n\nTeacher -SURAJIT BANERJEE\n");
                                 break;
                         }
                         break;
@@ -818,20 +964,25 @@ public class MainActivity extends AppCompatActivity {
                         switch (B)
                         {
                             case "CSE1A":
+                                textView.setText("Subject -Theme based Project I\n\nRoom No.-\n\nTeacher -");
                                 break;
                             case "CSE1B":
+                            case "AIML1A":
+                            case "AIML1B":
+                                textView.setText(null);
+                                T2.show();
                                 break;
                             case "CSE1C":
+                                if(radioButton2.isChecked())
+                                    textView.setText("Subject -Workshop & Manufacturing Practices LAB GrpY\n\nRoom No.-124\n\nTeacher -Guest Faculty2");
+                                else
+                                    textView.setText("Subject -Physics-1 LAB Grp X\n\nRoom No.-504\n\nTeacher -DR. I SARKAR");
                                 break;
                             case "CST":
                                 textView.setText("Subject -Physics-1\n\nRoom No.-514\n\nTeacher -DR. D. K. TRIPATHI");
                                 break;
                             case "CSBS":
                                 textView.setText("Subject -Discrete Maths\n\nRoom No.-515\n\nTeacher -Dr. Shilpa Pal");
-                                break;
-                            case "AIML1A":
-                                break;
-                            case "AIML1B":
                                 break;
                         }
                         break;
@@ -852,21 +1003,21 @@ public class MainActivity extends AppCompatActivity {
                         switch (B)
                         {
                             case "CSE1A":
+                                if(radioButton1.isChecked())
+                                    textView.setText("Subject -Physics-1 LAB Grp X\n\nRoom No.-504\nTeacher-DR. D. K. TRIPATHI");
+                                else
+                                    textView.setText("Subject -Workshop & Manufacturing Practices LAB GrpY\n\nRoom No.-124\n\nTeacher -MR. A. SARKAR");
                                 break;
                             case "CSE1B":
-                                break;
-                            case "CSE1C":
-                                break;
                             case "CST":
+                            case "CSE1C":
+                            case "AIML1A":
+                            case "AIML1B":
                                 textView.setText(null);
                                 T2.show();
                                 break;
                             case "CSBS":
                                 textView.setText("Subject -Physics for Computing Science\n\nRoom No.-501\n\nTeacher -Guest Faculty");
-                                break;
-                            case "AIML1A":
-                                break;
-                            case "AIML1B":
                                 break;
                         }
                         break;
@@ -874,19 +1025,21 @@ public class MainActivity extends AppCompatActivity {
                         switch (B)
                         {
                             case "CSE1A":
+                                textView.setText("Subject -Training English\n\nRoom No.-506\n\nTeacher -MRS. S. BASU");
                                 break;
                             case "CSE1B":
-                                break;
-                            case "CSE1C":
-                                break;
                             case "CST":
                             case "CSBS":
+                            case "CSE1C":
+                            case "AIML1A":
                                 textView.setText(null);
                                 T2.show();
                                 break;
-                            case "AIML1A":
-                                break;
                             case "AIML1B":
+                                if(radioButton2.isChecked())
+                                    textView.setText("Subject -Workshop & Manufacturing Practices LAB GrpY\n\nRoom No.-124\n\nTeacher -Guest Faculty2");
+                                else
+                                    textView.setText("Subject -Physics-1 LAB Grp X\n\nRoom No.-504\n\nTeacher -DR. S. KARAN");
                                 break;
                         }
                         break;
@@ -894,10 +1047,12 @@ public class MainActivity extends AppCompatActivity {
                         switch (B)
                         {
                             case "CSE1A":
-                                break;
                             case "CSE1B":
-                                break;
                             case "CSE1C":
+                            case "AIML1A":
+                            case "AIML1B":
+                                textView.setText(null);
+                                T2.show();
                                 break;
                             case "CST":
                                 textView.setText("Subject -Mathematics-1\n\nRoom No.-514\n\nTeacher -MS. P. MONDAL");
@@ -908,34 +1063,25 @@ public class MainActivity extends AppCompatActivity {
                                 else
                                     textView.setText("Subject -Physics for Computing Science LAB Grp Y\n\nRoom No.-\n\nTeacher -");
                                 break;
-                            case "AIML1A":
-                                break;
-                            case "AIML1B":
-                                break;
                         }
                         break;
                     case "Thursday":
                         switch (B)
                         {
                             case "CSE1A":
-                                break;
+                            case "CSBS":
                             case "CSE1B":
-                                break;
                             case "CSE1C":
+                            case "AIML1A":
+                            case "AIML1B":
+                                textView.setText(null);
+                                T2.show();
                                 break;
                             case "CST":
                                 if(radioButton1.isChecked())
                                     textView.setText("Subject -Physics-1 LAB Grp X\n\nRoom No.-504\n\nTeacher -DR. D. K. TRIPATHI");
                                 else
-                                    textView.setText("Subject -Physics-1 LAB Grp Y\n\nRoom No.-504\n\nTeacher -DR. INDRANI SARKAR");
-                                break;
-                            case "CSBS":
-                                textView.setText(null);
-                                T2.show();
-                                break;
-                            case "AIML1A":
-                                break;
-                            case "AIML1B":
+                                    textView.setText("Subject -Workshop & Manufacturing Practices LAB GrpY\n\nRoom No.-124\n\nTeacher -DR. S.CHABRI");
                                 break;
                         }
                         break;
@@ -943,21 +1089,23 @@ public class MainActivity extends AppCompatActivity {
                         switch (B)
                         {
                             case "CSE1A":
+                                textView.setText("Subject -Training Physics\n\nRoom No.-514\n\nTeacher -Guest Faculty3");
                                 break;
                             case "CSE1B":
-                                break;
-                            case "CSE1C":
-                                break;
-                            case "CST":
-                                textView.setText("Subject -Mathematics-1\n\nRoom No.-408\n\nTeacher -MS. P. MONDAL");
-                                break;
                             case "CSBS":
+                            case "AIML1A":
+                            case "AIML1B":
                                 textView.setText(null);
                                 T2.show();
                                 break;
-                            case "AIML1A":
+                            case "CSE1C":
+                                if(radioButton1.isChecked())
+                                    textView.setText("Subject -Workshop & Manufacturing Practices LAB GrpX\n\nRoom No.-124\n\nTeacher -MR. A. SAMANTA");
+                                else
+                                    textView.setText("Subject -Physics-1 LAB Grp Y\n\nRoom No.-504\n\nTeacher -DR. S. KARAN");
                                 break;
-                            case "AIML1B":
+                            case "CST":
+                                textView.setText("Subject -Mathematics-1\n\nRoom No.-408\n\nTeacher -MS. P. MONDAL");
                                 break;
                         }
                         break;
@@ -978,21 +1126,19 @@ public class MainActivity extends AppCompatActivity {
                         switch (B)
                         {
                             case "CSE1A":
+                                if(radioButton1.isChecked())
+                                    textView.setText("Subject -Physics-1 LAB Grp X\n\nRoom No.-504\nTeacher-DR. D. K. TRIPATHI");
+                                else
+                                    textView.setText("Subject -Workshop & Manufacturing Practices LAB GrpY\n\nRoom No.-124\n\nTeacher -MR. A. SARKAR");
                                 break;
                             case "CSE1B":
-                                break;
-                            case "CSE1C":
-                                break;
                             case "CST":
-
-                                break;
                             case "CSBS":
+                            case "CSE1C":
+                            case "AIML1A":
+                            case "AIML1B":
                                 textView.setText(null);
                                 T2.show();
-                                break;
-                            case "AIML1A":
-                                break;
-                            case "AIML1B":
                                 break;
                         }
                         break;
@@ -1000,22 +1146,21 @@ public class MainActivity extends AppCompatActivity {
                         switch (B)
                         {
                             case "CSE1A":
+                                textView.setText("Subject -Training English\n\nRoom No.-506\n\nTeacher -MRS. S. BASU");
                                 break;
                             case "CSE1B":
-                                break;
-                            case "CSE1C":
-                                break;
                             case "CST":
-                                textView.setText(null);
-                                T2.show();
-                                break;
                             case "CSBS":
+                            case "CSE1C":
+                            case "AIML1A":
                                 textView.setText(null);
                                 T2.show();
-                                break;
-                            case "AIML1A":
                                 break;
                             case "AIML1B":
+                                if(radioButton2.isChecked())
+                                    textView.setText("Subject -Workshop & Manufacturing Practices LAB GrpY\n\nRoom No.-124\n\nTeacher -Guest Faculty2");
+                                else
+                                    textView.setText("Subject -Physics-1 LAB Grp X\n\nRoom No.-504\n\nTeacher -DR. S. KARAN");
                                 break;
                         }
                         break;
@@ -1023,10 +1168,12 @@ public class MainActivity extends AppCompatActivity {
                         switch (B)
                         {
                             case "CSE1A":
-                                break;
                             case "CSE1B":
-                                break;
                             case "CSE1C":
+                            case "AIML1A":
+                            case "AIML1B":
+                                textView.setText(null);
+                                T2.show();
                                 break;
                             case "CST":
                                 textView.setText("Subject -Physical Training\n\nRoom No.-514\n\nTeacher -Sayantan Bakshi");
@@ -1037,34 +1184,25 @@ public class MainActivity extends AppCompatActivity {
                                 else
                                     textView.setText("Subject -Physics for Computing Science LAB Grp Y\n\nRoom No.-\n\nTeacher -");
                                 break;
-                            case "AIML1A":
-                                break;
-                            case "AIML1B":
-                                break;
                         }
                         break;
                     case "Thursday":
                         switch (B)
                         {
                             case "CSE1A":
-                                break;
+                            case "CSBS":
                             case "CSE1B":
-                                break;
                             case "CSE1C":
+                            case "AIML1A":
+                            case "AIML1B":
+                                textView.setText(null);
+                                T2.show();
                                 break;
                             case "CST":
                                 if(radioButton1.isChecked())
                                     textView.setText("Subject -Physics-1 LAB Grp X\n\nRoom No.-504\n\nTeacher -DR. D. K. TRIPATHI");
                                 else
-                                    textView.setText("Subject -Physics-1 LAB Grp Y\n\nRoom No.-504\n\nTeacher -DR. INDRANI SARKAR");
-                                break;
-                            case "CSBS":
-                                textView.setText(null);
-                                T2.show();
-                                break;
-                            case "AIML1A":
-                                break;
-                            case "AIML1B":
+                                    textView.setText("Subject -Workshop & Manufacturing Practices LAB GrpY\n\nRoom No.-124\n\nTeacher -DR. S.CHABRI");
                                 break;
                         }
                         break;
@@ -1072,22 +1210,21 @@ public class MainActivity extends AppCompatActivity {
                         switch (B)
                         {
                             case "CSE1A":
+                                textView.setText("Subject -Training Physics\n\nRoom No.-514\n\nTeacher -Guest Faculty3");
                                 break;
                             case "CSE1B":
+                            case "CST":
+                            case "CSBS":
+                            case "AIML1A":
+                            case "AIML1B":
+                                textView.setText(null);
+                                T2.show();
                                 break;
                             case "CSE1C":
-                                break;
-                            case "CST":
-                                textView.setText(null);
-                                T2.show();
-                                break;
-                            case "CSBS":
-                                textView.setText(null);
-                                T2.show();
-                                break;
-                            case "AIML1A":
-                                break;
-                            case "AIML1B":
+                                if(radioButton1.isChecked())
+                                    textView.setText("Subject -Workshop & Manufacturing Practices LAB GrpX\n\nRoom No.-124\n\nTeacher -MR. A. SAMANTA");
+                                else
+                                    textView.setText("Subject -Physics-1 LAB Grp Y\n\nRoom No.-504\n\nTeacher -DR. S. KARAN");
                                 break;
                         }
                         break;
@@ -1109,22 +1246,19 @@ public class MainActivity extends AppCompatActivity {
                         switch (B)
                         {
                             case "CSE1A":
+                                if(radioButton1.isChecked())
+                                    textView.setText("Subject -Physics-1 LAB Grp X\n\nRoom No.-504\nTeacher-DR. D. K. TRIPATHI");
+                                else
+                                    textView.setText("Subject -Workshop & Manufacturing Practices LAB GrpY\n\nRoom No.-124\n\nTeacher -MR. A. SARKAR");
                                 break;
                             case "CSE1B":
-                                break;
-                            case "CSE1C":
-                                break;
                             case "CST":
-                                textView.setText(null);
-                                T2.show();
-                                break;
                             case "CSBS":
+                            case "CSE1C":
+                            case "AIML1A":
+                            case "AIML1B":
                                 textView.setText(null);
                                 T2.show();
-                                break;
-                            case "AIML1A":
-                                break;
-                            case "AIML1B":
                                 break;
                         }
                         break;
@@ -1132,22 +1266,25 @@ public class MainActivity extends AppCompatActivity {
                         switch (B)
                         {
                             case "CSE1A":
-                                break;
-                            case "CSE1B":
-                                break;
-                            case "CSE1C":
-                                break;
+                            case "CSBS":
+                                textView.setText(null);
+                                T2.show();
                             case "CST":
                                 textView.setText(null);
                                 T2.show();
                                 break;
-                            case "CSBS":
+                            case "CSE1B":
+                                break;
+                            case "CSE1C":
+                            case "AIML1A":
                                 textView.setText(null);
                                 T2.show();
                                 break;
-                            case "AIML1A":
-                                break;
                             case "AIML1B":
+                                if(radioButton2.isChecked())
+                                    textView.setText("Subject -Workshop & Manufacturing Practices LAB GrpY\n\nRoom No.-124\n\nTeacher -Guest Faculty2");
+                                else
+                                    textView.setText("Subject -Physics-1 LAB Grp X\n\nRoom No.-504\n\nTeacher -DR. S. KARAN");
                                 break;
                         }
                         break;
@@ -1155,21 +1292,16 @@ public class MainActivity extends AppCompatActivity {
                         switch (B)
                         {
                             case "CSE1A":
-                                break;
-                            case "CSE1B":
-                                break;
-                            case "CSE1C":
-                                break;
-                            case "CST":
-                                textView.setText("Subject -Physical Training\n\nRoom No.-514\n\nTeacher -Sayantan Bakshi");
-                                break;
                             case "CSBS":
+                            case "CSE1B":
+                            case "CSE1C":
+                            case "AIML1A":
+                            case "AIML1B":
                                 textView.setText(null);
                                 T2.show();
                                 break;
-                            case "AIML1A":
-                                break;
-                            case "AIML1B":
+                            case "CST":
+                                textView.setText("Subject -Physical Training\n\nRoom No.-514\n\nTeacher -Sayantan Bakshi");
                                 break;
                         }
                         break;
@@ -1177,24 +1309,19 @@ public class MainActivity extends AppCompatActivity {
                         switch (B)
                         {
                             case "CSE1A":
-                                break;
+                            case "CSBS":
                             case "CSE1B":
-                                break;
                             case "CSE1C":
+                            case "AIML1A":
+                            case "AIML1B":
+                                textView.setText(null);
+                                T2.show();
                                 break;
                             case "CST":
                                 if(radioButton1.isChecked())
                                     textView.setText("Subject -Physics-1 LAB Grp X\n\nRoom No.-504\n\nTeacher -DR. D. K. TRIPATHI");
                                 else
-                                    textView.setText("Subject -Physics-1 LAB Grp Y\n\nRoom No.-504\n\nTeacher -DR. INDRANI SARKAR");
-                                break;
-                            case "CSBS":
-                                textView.setText(null);
-                                T2.show();
-                                break;
-                            case "AIML1A":
-                                break;
-                            case "AIML1B":
+                                    textView.setText("Subject -Workshop & Manufacturing Practices LAB GrpY\n\nRoom No.-124\n\nTeacher -DR. S.CHABRI");
                                 break;
                         }
                         break;
@@ -1202,22 +1329,19 @@ public class MainActivity extends AppCompatActivity {
                         switch (B)
                         {
                             case "CSE1A":
-                                break;
+                            case "CSBS":
+                            case "CST":
                             case "CSE1B":
+                            case "AIML1A":
+                            case "AIML1B":
+                                textView.setText(null);
+                                T2.show();
                                 break;
                             case "CSE1C":
-                                break;
-                            case "CST":
-                                textView.setText(null);
-                                T2.show();
-                                break;
-                            case "CSBS":
-                                textView.setText(null);
-                                T2.show();
-                                break;
-                            case "AIML1A":
-                                break;
-                            case "AIML1B":
+                                if(radioButton1.isChecked())
+                                    textView.setText("Subject -Workshop & Manufacturing Practices LAB GrpX\n\nRoom No.-124\n\nTeacher -MR. A. SAMANTA");
+                                else
+                                    textView.setText("Subject -Physics-1 LAB Grp Y\n\nRoom No.-504\n\nTeacher -DR. S. KARAN");
                                 break;
                         }
                         break;
