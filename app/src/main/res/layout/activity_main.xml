@@ -10,8 +10,8 @@
 
     <TextView
         android:id="@+id/textViewResult"
-        android:layout_width="327dp"
-        android:layout_height="213dp"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
         android:text=""
         android:textAlignment="center"
         android:textAllCaps="false"
@@ -20,16 +20,14 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button9"
-        app:layout_constraintVertical_bias="0.541" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="162dp"
         android:layout_height="48dp"
         android:layout_marginEnd="20dp"
-        android:text="@string/_10_50_11_40_am"
+        android:text="10:20-11:10 AM"
         android:textColor="#090808"
         app:backgroundTint="#004DBAC7"
         app:layout_constraintBottom_toTopOf="@+id/button4"
@@ -43,7 +41,7 @@
         android:layout_width="162dp"
         android:layout_height="48dp"
         android:layout_marginStart="20dp"
-        android:text="11:40-12:30 PM"
+        android:text="11:10-12:00 PM"
         android:textColor="#090808"
         app:backgroundTint="#004DBAC7"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -57,7 +55,7 @@
         android:layout_width="162dp"
         android:layout_height="48dp"
         android:layout_marginEnd="20dp"
-        android:text="@string/_12_30_1_20_pm"
+        android:text="12:00-12:50 PM"
         android:textColor="#090808"
         app:backgroundTint="#00FFEB3B"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -71,7 +69,7 @@
         android:layout_width="162dp"
         android:layout_height="48dp"
         android:layout_marginStart="20dp"
-        android:text="@string/_1_20_2_10_pm"
+        android:text="1:40 - 2:30 PM"
         android:textColor="#090808"
         app:backgroundTint="#004DBAC7"
         app:layout_constraintBottom_toTopOf="@+id/button7"
@@ -85,7 +83,7 @@
         android:layout_width="162dp"
         android:layout_height="48dp"
         android:layout_marginEnd="20dp"
-        android:text="@string/_2_10_3_00_pm"
+        android:text="2:30 - 3:20 PM"
         android:textColor="#090808"
         app:backgroundTint="#00FFEB3B"
         app:layout_constraintBottom_toTopOf="@+id/button7"
@@ -99,10 +97,9 @@
         android:layout_width="162dp"
         android:layout_height="48dp"
         android:layout_marginStart="20dp"
-        android:text="@string/_3_00_3_50_pm"
+        android:text="3:20 - 4:10 PM"
         android:textColor="#090808"
         app:backgroundTint="#00FFEB3B"
-        app:layout_constraintBottom_toTopOf="@+id/button9"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button5"
         app:strokeColor="#000000" />
@@ -112,7 +109,7 @@
         android:layout_width="162dp"
         android:layout_height="48dp"
         android:layout_marginEnd="20dp"
-        android:text="@string/_3_50_4_40_pm"
+        android:text="4:10 - 5:00 PM"
         android:textColor="#090808"
         app:backgroundTint="#00FFEB3B"
         app:layout_constraintEnd_toEndOf="parent"
@@ -133,7 +130,7 @@
 
     <RadioGroup
         android:id="@+id/radioGroup"
-        android:layout_width="210dp"
+        android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -148,13 +145,19 @@
             android:layout_width="106dp"
             android:layout_height="wrap_content"
             android:checked="true"
-            android:text="Grp X" />
+            android:text="Sec A" />
 
         <RadioButton
             android:id="@+id/radioButton2"
             android:layout_width="95dp"
             android:layout_height="wrap_content"
-            android:text="Grp Y" />
+            android:text="Sec B" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:text="Sec C" />
 
     </RadioGroup>
 
@@ -163,7 +166,7 @@
         android:layout_width="162dp"
         android:layout_height="48dp"
         android:layout_marginStart="20dp"
-        android:text="10:00-10:50 AM"
+        android:text="9:30-10:20 AM"
         android:textColor="#000000"
         app:backgroundTint="#00FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/button3"
@@ -207,31 +210,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/button9"
-        android:layout_width="162dp"
-        android:layout_height="48dp"
-        android:text="4:40 - 5:30 PM "
-        android:textAllCaps="false"
-        android:textColor="#000000"
-        app:backgroundTint="#00FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button7" /><![CDATA[
-
-
-
-
-
-
-
-
-
-    />
-
-
-
-
-]]>
 </androidx.constraintlayout.widget.ConstraintLayout>
