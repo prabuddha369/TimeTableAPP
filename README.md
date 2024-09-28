@@ -23,4 +23,17 @@ git clone "Remote_Url"
 ```
 https://developer.android.com/studio/run
 ```
+
+<h2>Folder Structure</h2>
+<p>Source Code</p>
+
+```
+app/src/main/java/com/example/timetable/MainActivity.java
+```
+<p>Resources</p>
+
+```
+app/src/main/res
+```
+
 <h2>Don't forget to leave a star ⭐</h2>
