@@ -23,3 +23,4 @@ git clone "Remote_Url"
 ```
 https://developer.android.com/studio/run
 ```
+<h2>Don't forget to leave a star ⭐</h2>
